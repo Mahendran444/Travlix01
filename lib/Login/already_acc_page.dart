@@ -37,6 +37,8 @@ class alreadyaccpg extends StatelessWidget {
                 Text("Email", style: TextStyle(color: Colors.white, fontSize: 15)),
                 SizedBox(height: 10),
                 TextField(
+                  style: TextStyle(color: Colors.white),
+
                   decoration: InputDecoration(
                     labelText: "Email address",
                     labelStyle: TextStyle(color: Colors.white),
@@ -50,6 +52,8 @@ class alreadyaccpg extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 TextField(
+                  style: TextStyle(color: Colors.white),
+
                   decoration: InputDecoration(
                     labelText: "Password",
                     suffixIcon: Icon(

@@ -48,6 +48,8 @@ class reviewbutton extends StatelessWidget {
                 border: Border.all(color: Color(0xFF013220), width: 2),
               ),
               child: TextField(
+                style: TextStyle(color: Colors.white),
+
                 decoration: InputDecoration(
                   hintText: "Search",
                   hintStyle: TextStyle(color: Colors.white, fontSize: 18),

@@ -28,6 +28,7 @@ class accpage extends StatelessWidget {
                 Text("Email",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold),),
                 SizedBox(height: 10,),
                 TextField(
+                  style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     labelText: "Email address",
                     labelStyle: TextStyle(color: Colors.white),
@@ -38,6 +39,8 @@ class accpage extends StatelessWidget {
                 Text("Password",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold),),
                 SizedBox(height: 10,),
                 TextField(
+                  style: TextStyle(color: Colors.white),
+
                   decoration: InputDecoration(
                     labelText: "Password",
                     suffixIcon: Icon(Icons.remove_red_eye_outlined,color: Colors.white,size: 20,),
