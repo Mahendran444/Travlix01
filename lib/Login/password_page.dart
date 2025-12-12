@@ -44,7 +44,7 @@ class forgotpass extends StatelessWidget {
                 ),
                 SizedBox(height: 25),
                 Text(
-                  "Email adress",
+                  "Email address",
                   style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
                 SizedBox(height: 10),

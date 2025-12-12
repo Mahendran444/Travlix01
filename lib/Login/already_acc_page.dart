@@ -31,6 +31,7 @@ class alreadyaccpg extends StatelessWidget {
                     color: Colors.white,
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
+
                   ),
                 ),
                 SizedBox(height: 25),
@@ -38,7 +39,6 @@ class alreadyaccpg extends StatelessWidget {
                 SizedBox(height: 10),
                 TextField(
                   style: TextStyle(color: Colors.white),
-
                   decoration: InputDecoration(
                     labelText: "Email address",
                     labelStyle: TextStyle(color: Colors.white),
