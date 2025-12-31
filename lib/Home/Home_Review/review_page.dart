@@ -68,13 +68,7 @@ class reviewpage extends StatelessWidget {
                   const SizedBox(width: 10),
                   Expanded(
                     child: ElevatedButton(
-                      onPressed: () {
-                        // Replace UploadImagePage() with your real upload widget if you have one.
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (builder) => UploadImagePage()),
-                        // );
-                      },
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF013220),
                         shape: RoundedRectangleBorder(
