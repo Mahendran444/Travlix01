@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:travlix/Home/Home_Review/write_reviewpage.dart';
+import 'package:image_picker/image_picker.dart';
 
 class reviewpage extends StatelessWidget {
   const reviewpage({super.key});
@@ -68,7 +69,9 @@ class reviewpage extends StatelessWidget {
                   const SizedBox(width: 10),
                   Expanded(
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        ImagePicker().pickImage(source: ImageSource.gallery);
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF013220),
                         shape: RoundedRectangleBorder(
@@ -157,10 +160,6 @@ class reviewpage extends StatelessWidget {
                     const SizedBox(height: 20),
                     ElevatedButton.icon(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (b) => AddPlacePage()),
-                        // );
                       },
                       icon: const Icon(
                         Icons.add_location_alt_outlined,

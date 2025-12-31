@@ -52,7 +52,7 @@ class tripspage extends StatelessWidget {
                               children: [
                                 SizedBox(height: 10,),
                                 IconButton(icon: Icon(Icons.close,color: Colors.white,size: 30,),
-                                  onPressed: (){
+                                  onPressed: (){Navigator.pop(context);
                                   },),
                                 SizedBox(height: 30,),
                                 Center(child: Text("Sign in and plan your next\n               adventure",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 25),)),
