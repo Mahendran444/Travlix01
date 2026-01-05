@@ -16,8 +16,8 @@ class reviewpage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 50),
-              const Text(
+              SizedBox(height: 50),
+              Text(
                 "Review",
                 style: TextStyle(
                   color: Colors.white,
@@ -25,8 +25,8 @@ class reviewpage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 40),
-              const Text(
+              SizedBox(height: 40),
+              Text(
                 "No reviews yet",
                 style: TextStyle(
                   color: Colors.white,
@@ -34,12 +34,12 @@ class reviewpage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 10),
-              const Text(
+              SizedBox(height: 10),
+              Text(
                 "You have not written any reviews yet, get\nstarted!",
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               Row(
                 children: [
                   Expanded(
@@ -51,13 +51,13 @@ class reviewpage extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF013220),
+                        backgroundColor: Color(0xFF013220),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40),
-                          side: const BorderSide(color: Colors.white, width: 2),
+                          side: BorderSide(color: Colors.white, width: 2),
                         ),
                       ),
-                      child: const Padding(
+                      child: Padding(
                         padding: EdgeInsets.symmetric(vertical: 13),
                         child: Text(
                           "Write a review",
@@ -66,20 +66,20 @@ class reviewpage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  SizedBox(width: 10),
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
                         ImagePicker().pickImage(source: ImageSource.gallery);
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF013220),
+                        backgroundColor: Color(0xFF013220),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40),
-                          side: const BorderSide(color: Colors.white, width: 2),
+                          side: BorderSide(color: Colors.white, width: 2),
                         ),
                       ),
-                      child: const Padding(
+                      child: Padding(
                         padding: EdgeInsets.symmetric(vertical: 13),
                         child: Text(
                           "Upload a photo",
@@ -90,7 +90,7 @@ class reviewpage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 50),
+              SizedBox(height: 50),
               Stack(
                 alignment: Alignment.bottomLeft,
                 children: [
@@ -117,7 +117,7 @@ class reviewpage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
-                      children: const [
+                      children:[
                         Text(
                           "We want you to\nwrite us a review",
                           style: TextStyle(
@@ -138,12 +138,12 @@ class reviewpage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 30),
+              SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   children: [
-                    const Text(
+                    Text(
                       "Is Tripadvisor missing a place?",
                       style: TextStyle(
                         color: Colors.white,
@@ -151,17 +151,17 @@ class reviewpage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    const Text(
+                    SizedBox(height: 10),
+                    Text(
                       "Tell us about it so we can improve what we show.",
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white70, fontSize: 15),
                     ),
-                    const SizedBox(height: 20),
+                    SizedBox(height: 20),
                     ElevatedButton.icon(
                       onPressed: () {
                       },
-                      icon: const Icon(
+                      icon: Icon(
                         Icons.add_location_alt_outlined,
                         color: Colors.white,
                       ),
@@ -176,15 +176,15 @@ class reviewpage extends StatelessWidget {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF013220),
+                        backgroundColor: Color(0xFF013220),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40),
-                          side: const BorderSide(color: Colors.white, width: 2),
+                          side: BorderSide(color: Colors.white, width: 2),
                         ),
                         padding: const EdgeInsets.symmetric(horizontal: 18),
                       ),
                     ),
-                    const SizedBox(height: 40),
+                    SizedBox(height: 40),
                   ],
                 ),
               ),
@@ -202,7 +202,7 @@ class reviewpage extends StatelessWidget {
         foregroundColor: Colors.black,
         activeBackgroundColor: Colors.white,
         activeForegroundColor: Colors.black,
-        shape: const CircleBorder(),
+        shape: CircleBorder(),
 
         overlayColor: Colors.black,
         overlayOpacity: 0.4,
@@ -212,11 +212,11 @@ class reviewpage extends StatelessWidget {
 
         children: [
           SpeedDialChild(
-            child: const Icon(Icons.photo),
+            child: Icon(Icons.photo),
             backgroundColor: Colors.white,
             foregroundColor: Colors.black,
             label: 'Upload a photo',
-            labelStyle: const TextStyle(color: Colors.white, fontSize: 16),
+            labelStyle: TextStyle(color: Colors.white, fontSize: 16),
             labelBackgroundColor: Colors.black54,
             onTap: () {
               // Navigator.push(
@@ -226,11 +226,11 @@ class reviewpage extends StatelessWidget {
             },
           ),
           SpeedDialChild(
-            child: const Icon(Icons.edit),
+            child: Icon(Icons.edit),
             backgroundColor: Colors.white,
             foregroundColor: Colors.black,
             label: 'Write a review',
-            labelStyle: const TextStyle(color: Colors.white, fontSize: 16),
+            labelStyle: TextStyle(color: Colors.white, fontSize: 16),
             labelBackgroundColor: Colors.black54,
             onTap: () {
               Navigator.push(
@@ -241,11 +241,11 @@ class reviewpage extends StatelessWidget {
           ),
 
           SpeedDialChild(
-            child: const Icon(Icons.location_on_outlined),
+            child: Icon(Icons.location_on_outlined),
             backgroundColor: Colors.white,
             foregroundColor: Colors.black,
             label: 'Add a place',
-            labelStyle: const TextStyle(color: Colors.white, fontSize: 16),
+            labelStyle: TextStyle(color: Colors.white, fontSize: 16),
             labelBackgroundColor: Colors.black54,
             onTap: () {
               // Navigator.push(
